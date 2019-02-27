@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+      "c-head": "/component/head/cmp",
+      "c-forecast-list": "/component/forecast-list/cmp",
+      "c-hours-list": "/component/hours-list/cmp",
+      "c-lifestyle-list": "/component/lifestyle-list/cmp",
+      "c-loading": "/component/loading/cmp"
+  }
+}

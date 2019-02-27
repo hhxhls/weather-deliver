@@ -1,0 +1,27 @@
+<!--component/weather-detail/cmp.wxml-->
+<view class="container">
+    <view class="up">
+        <text class="weather">{{index.condTxt}}</text>
+        <text class="split">|</text>
+        <view class="air" style="background-color:{{airdes.bgColor}};">
+            <image class="air-icon" src="../../img/AQI/{{airdes.imgCode}}.png" mode="widthFix"></image>
+            <text class="aqi">{{index.aqi}}</text>
+            <text class="air-des">{{index.qlty}}</text>
+        </view>
+    </view>
+    <view class="down">
+        <view class="wind">
+            <image class="down-icon" src="../../img/wind.png" style="transform:rotate({{windDirectCode}}deg);"></image>
+            <text class="down-value">{{index.windSc}}级</text>
+        </view>
+        <view class="humidity">
+            <image class="down-icon" src="../../img/water.png"></image>
+            <text class="down-value">{{index.hum}}</text>
+        </view>
+        <view class="press">
+            <image class="down-icon" src="../../img/press.png"></image>
+            <text class="down-value">{{index.pres}}hPa</text>
+        </view>
+    </view>
+</view>
+

@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+<view class="loading-container" hidden="{{!loading}}">
+    <c-loading class="loading"></c-loading>
+</view>
+<view class="container" hidden="{{loading}}">
+    <c-head 
+        district="{{detailLocation.district}}" 
+        street="{{detailLocation.street_number}}" 
+        weatherCode="{{weatherCurrent.cond_code}}" 
+        tmp="{{weatherCurrent.tmp}}"
+        index="{{weatherDetail.getWeatherDetail(weatherCurrent,airQuality)}}" 
+        airdes="{{aqi.getAQIStyle(airQuality)}}" 
+        luna="{{lunaInfo}}" 
+        location="{{location}}" 
+        class="item" 
+            ></c-head>
+    <c-forecast-list  forecast="{{weatherForecast}}" ></c-forecast-list>
+    <c-hours-list hourly="{{weatherHourly}}"></c-hours-list>
+    <c-lifestyle-list lifestyle="{{lifeStyle}}"></c-lifestyle-list>
+</view>
+<wxs src="../../wxs/weather-detail.wxs" module="weatherDetail"></wxs>
+<wxs src="../../wxs/AQI.wxs" module="aqi"></wxs>

@@ -1,0 +1,4 @@
+<!--component/like/cmp.wxml-->
+<view class="container">
+    <image class="favor" src="{{liked?'/img/liked.png':'/img/like.png'}}" catch:tap="onLikeTap"></image>
+</view>

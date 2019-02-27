@@ -1,0 +1,8 @@
+
+<view class="container">
+    <c-search></c-search>
+    <c-tag-list title="热门城市" content="{{hotCity}}" current="{{true}}"></c-tag-list>
+    <c-tag-list title="历史记录" content="{{history}}">
+        <c-bin text="{{true}}" target="searchHistory" bindhistorychange="onHistoryChange"></c-bin>
+    </c-tag-list>
+</view>

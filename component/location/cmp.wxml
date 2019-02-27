@@ -1,0 +1,8 @@
+<!--component/location/cmp.wxml-->
+<view class="container"catch:tap="onLocationTap">
+    <image class="locate-icon" src="/img/locate-icon.png"></image>
+    <text class="district">{{district}}</text>
+    <text class="street">{{street}}</text>
+    <image class="dropdown-icon" src="/img/dropdown-icon.png"></image>
+    <c-like class="like" location="{{location}}"></c-like>
+</view>

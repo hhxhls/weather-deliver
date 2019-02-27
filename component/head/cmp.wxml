@@ -1,0 +1,9 @@
+<view class="container" style="background-image:url({{imgUrl}})">
+    <view class="mask"></view>
+    <view class="content">
+        <c-location district="{{district}}" street="{{street}}" location="{{location}}"></c-location>
+        <c-weather-sum weatherCode="{{weatherCode}}" tmp="{{tmp}}"></c-weather-sum>
+        <c-weather-detail index="{{index}}" airdes="{{airdes}}"></c-weather-detail>
+        <c-calendar luna="{{luna}}"></c-calendar>
+    </view>
+</view>

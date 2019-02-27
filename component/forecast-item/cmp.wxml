@@ -1,0 +1,24 @@
+<!--component/forecast-item/cmp.wxml-->
+<view class="container" style="{{!first?'border-left:4rpx solid #ddd':''}}">
+    <view class="top">
+        <text class="date">{{date}}</text>
+        <view class="sun">
+            <view class="sunrise sun">
+                <image class="sun-icon" src="/img/sunrise.png"></image>
+                <text class="sun-text">{{sunrise}}</text>
+            </view>
+            <view class="sunset sun">
+                <image class="sun-icon" src="/img/sunset.png"></image>
+                <text class="sun-text">{{sunset}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="middle">
+        <image class="weather-icon" src="/img/cond-icon-heweather/{{weatherCode}}.png"></image>
+        <text class="weather-des">{{weatherDesD}}{{weatherDesD!=weatherDesN?'转'+ weatherDesN:''}}</text>
+    </view>
+    <view class="bottom">
+        <text class="wind">{{windDir}}</text>
+        <text class="tmp">{{tmpMax}}°C/{{tmpMin}}°C</text>
+    </view>
+</view>

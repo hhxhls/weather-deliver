@@ -1,0 +1,29 @@
+/* component/location/cmp.wxss */
+.container{
+    font-size: 24rpx;
+    line-height: 2;
+    vertical-align: middle;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+    .container .district{
+        margin-right:  15rpx;
+        vertical-align: middle;
+        
+    }
+    .container .locate-icon,.container .dropdown-icon{
+        display: inline-block;
+        width: 32rpx;
+        height: 32rpx;
+        margin-top: 16rpx;
+        margin-right: 8rpx;
+    }
+        .container .like{
+            position: absolute;
+            top: 32rpx;
+            right: 60rpx;
+            margin-left: 40rpx;
+            margin-top:6rpx;
+        }

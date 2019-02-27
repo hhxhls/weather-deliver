@@ -1,0 +1,16 @@
+<!--component/tag-list/cmp.wxml-->
+<view class="container">
+    <view class="title-container">
+        <view class="title">{{title}}</view>
+        <slot class="bin"></slot>
+    </view>
+    <view class="tag-container">
+        <view 
+            class="tag-item {{(current===true && index===0)?'current':''}}" 
+            wx:for="{{content}}" wx:key="index"
+            data-keyword="{{item}}"
+            bind:tap="onTagTap">{{item}}
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,31 @@
+function getAQIStyle(airQuality){
+    var bgColor,imgCode;
+    if(airQuality.aqi <= 50){
+        bgColor = '#8fc31f';
+        imgCode = 1;
+    }else if(airQuality.aqi<=100){
+        bgColor = '#d7af0e';
+        imgCode = 2;
+    }else if(airQuality.aqi<=150){
+        bgColor = '#f39800';
+        imgCode = 3;
+    }else if(airQuality.aqi<=200){
+        bgColor = '#e2361a';
+        imgCode = 4;
+    }else if(airQuality.aqi<=300){
+        bgColor = '#5f52a0';
+        imgCode = 5;
+    }else{
+        bgColor = '#631541';
+        imgCode = 6;
+    }
+    return {
+        bgColor:bgColor,
+        imgCode:imgCode
+    }
+}
+
+module.exports = {
+    getAQIStyle:getAQIStyle,
+}
+

@@ -1,0 +1,33 @@
+/* component/tag-list/cmp.wxss */
+.container{
+    width: 100%;
+    margin: 20rpx 0;
+    margin-left: 20rpx;
+}   
+    .container .title-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20rpx;
+    }
+        .container .title-container .title{
+            display: inline-block;
+            font-size: 36rpx;
+            font-weight: 700;
+        }
+
+
+    .container .tag-item{
+        text-align: center;
+        display: inline-block;
+        background-color: #ddd;
+        padding: 10rpx 25rpx;
+        font-size: 28rpx;
+        min-width: 100rpx;
+        margin:10rpx;
+        border-radius: 10rpx;
+    }
+
+    .container .tag-item.current{
+        background-color: #337ab7;
+        color:#fff;
+    }

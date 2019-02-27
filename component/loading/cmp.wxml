@@ -1,0 +1,5 @@
+<!--components/loading/cmp.wxml-->
+<view class="container" hidden="{{hidden}}">
+    <view class="circle out"></view>
+    <view class="circle in"></view>
+</view>

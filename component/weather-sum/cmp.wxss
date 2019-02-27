@@ -1,0 +1,16 @@
+/* component/weather-sum/cmp.wxss */
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    .container .weather-icon{
+        width: 200rpx;
+        margin-top: 40rpx;
+    }
+    .container .tmp{
+        font-size: 200rpx;
+    }
+    .container .tmp-mark{
+        font-size: 50rpx;
+    }

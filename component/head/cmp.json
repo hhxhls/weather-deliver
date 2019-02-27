@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "c-location": "/component/location/cmp",
+    "c-weather-sum": "/component/weather-sum/cmp",
+    "c-weather-detail":"/component/weather-detail/cmp",
+    "c-calendar":"/component/calendar/cmp"
+  }
+}

@@ -1,0 +1,52 @@
+/* component/forecast-item/cmp.wxss */
+.container{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 375rpx;
+    font-size: 32rpx;
+}
+
+    .container  .top{
+        display: flex;
+        justify-content: space-between;
+    }
+        .container .top .date{
+            margin-left: 10rpx;
+        }
+        .container  .top .sun{
+            display: flex;
+
+        }
+        .container  .top .sun-icon{
+            width: 42rpx;
+            height: 42rpx;
+            margin-right: 10rpx;
+        }
+
+        .container  .top .sun-text{
+            line-height: 42rpx;
+            font-size: 26rpx;
+            margin-right: 10rpx;
+            color:#999;
+        }
+    .container .middle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .container .middle .weather-icon{
+            width: 80rpx;
+            height: 80rpx;
+            margin-right: 15rpx;
+        }
+    .container .bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+        .container .bottom .wind{
+            margin-left: 10rpx;
+        }
+        .container .bottom .tmp{
+            margin-right: 10rpx;
+        }

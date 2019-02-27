@@ -1,0 +1,62 @@
+/* component/weather-detail/cmp.wxss */
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .container .up{
+        width: 100%;
+        height: 48rpx;
+        font-size: 32rpx;
+        line-height: 48rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .container .up .weather{
+            display: inline-block;      
+        }
+
+        .container .up .split{
+            margin: 0 40rpx;
+            font-size: 32rpx;
+            line-height: 48rpx;
+        }
+        .container .up .air {
+            min-width: 200rpx;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+            .up .air .air-icon{
+                width: 32rpx;
+                max-height:32rpx; 
+                flex-shrink: 0;
+                margin-left: 20rpx;
+                margin-right: 20rpx;
+            }
+            .up .air .aqi,.up .air .air-des{
+                color: #fff;
+                margin-right: 10rpx;
+            }
+    .container .down{
+        width: 100%;
+        height: 60rpx;
+
+        line-height: 60rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .down .down-icon{
+        width: 28rpx;
+        height: 28rpx;
+        margin-left: 10rpx;
+    }
+    .container .down .down-value{
+        font-size: 28rpx;
+        color: #999;
+        margin-right: 10rpx;
+    }

@@ -1,0 +1,8 @@
+/* component/like/cmp.wxss */
+.container{
+    display: inline-block;
+}
+    .container .favor{
+        width: 38rpx;
+        height: 38rpx;
+    }

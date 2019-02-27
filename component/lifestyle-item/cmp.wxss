@@ -1,0 +1,25 @@
+/* component/lifestyle-item/cmp.wxss */
+
+.container{
+    width: 185rpx;
+    height: 185rpx;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+    .container .icon{
+        width: 60rpx;
+        height: 60rpx;
+    }
+
+    .container .des{
+        font-size: 32rpx;
+        color: #333;
+    }
+
+    .container .type{
+        font-size: 28rpx;
+        color: #999;
+    }

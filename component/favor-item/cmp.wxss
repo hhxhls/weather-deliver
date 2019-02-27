@@ -1,0 +1,58 @@
+/* component/favor-item/cmp.wxss */
+.container{
+    box-sizing: border-box;
+    padding: 20rpx 0;
+    border-radius: 10rpx;
+    margin:25rpx;
+    width: 700rpx;
+    background-color: #ccc;
+    display: flex;
+    color: #fff;
+    overflow: hidden;
+}
+    .container .main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .container .main .left{
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .main .left .icon{
+                width: 100rpx;
+                height: 100rpx;
+            }
+        .container .main .middle{
+            width: 34%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+            .middle .middle-text{
+                font-size: 28rpx;
+                color: #333;
+            }
+            .middle .location{
+                font-size: 36rpx;
+                color: #000;
+                font-weight: 700;
+            }
+        .container .main .right{
+            width: 33%;
+        }
+            .right .tmp-current{
+                font-size: 60rpx;
+                color: #000;
+                font-weight: 700;
+            }
+    .container .delete{
+        width: 80rpx;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }

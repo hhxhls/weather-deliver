@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "c-lifestyle-item": "/component/lifestyle-item/cmp"
+  }
+}

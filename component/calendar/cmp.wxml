@@ -1,0 +1,17 @@
+<!--component/calendar/cmp.wxml-->
+<view class="container">
+    <view class="head"></view>
+    <view class="content">
+        <view class="left">
+            <view class="date">{{luna.year}}年{{luna.month}}月</view>
+             <view class="luna-date">农历{{luna.cnmonth}}月</view>
+             <view class="luna-day">{{luna.cnday}}</view>
+        </view>
+        <view class="split"></view>
+        <view class="right">
+            <view class="cyclicalYear">{{luna.cyclicalYear}}年</view>
+            <view class="cyclicalMonth">{{luna.cyclicalMonth}}月</view>
+            <view class="cyclicalDay">{{luna.cyclicalDay}}日</view>
+        </view>
+    </view>
+</view>

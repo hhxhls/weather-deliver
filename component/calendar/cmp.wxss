@@ -1,0 +1,52 @@
+/* component/calendar/cmp.wxss */
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+    .container .head{
+        width:100%;
+        height: 48rpx;
+        background-color: #f00;
+        border-bottom: 4rpx solid #ff0;
+    }
+    .container .content{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 4rpx solid #eee;
+        border-top: none;
+        box-sizing: border-box;
+
+    }
+
+    .container .content .left{
+        width: 45%;
+        text-align: center;
+    }
+        .content .left .date,.content .left .luna-date{
+            font-size: 28rpx;
+            word-spacing: 10rpx;
+            color: #333;
+        }
+        .content .left .luna-day{
+            font-size: 60rpx;
+            color: #333;
+        }
+    
+    .container .content .split{
+        height: 120rpx;
+        border-left: 4rpx solid #333;
+
+    }
+    .container .content .right{
+        width: 45%;
+        text-align: center;
+    }
+        .container .right .cyclicalYear,.container .right .cyclicalMonth,.container .right .cyclicalDay{
+            color: #333;
+        }

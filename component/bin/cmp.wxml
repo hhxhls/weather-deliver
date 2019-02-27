@@ -1,0 +1,5 @@
+<!--component/bin/cmp.wxml-->
+<view class="container" style="{{text?'':'margin-right:0rpx;'}}" catch:tap="onBinTap">
+    <image class="bin" src="/img/bin.png"></image>
+    <text class="des" wx:if="{{text}}">清空</text>
+</view>

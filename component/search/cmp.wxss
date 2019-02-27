@@ -1,0 +1,33 @@
+/* components/search/cmp.wxss */
+.container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx;
+    width: 100%;
+    height: 100rpx;
+}
+    .container .search-box{
+        box-sizing: border-box;
+        width: 85%;
+        padding-left: 20rpx;
+        background-color: #ccc;
+        font-size: 28rpx;
+        height: 64rpx;
+        line-height: 64rpx;
+        margin-right: 20rpx;
+    }
+    .container .placeholder{
+        color: #666;
+    }
+    .container .btn{
+        background-color: #337ab7;
+        color:#fff;
+        text-align: center;
+        line-height: 64rpx;
+        box-sizing: border-box;
+        width: 15%;
+        height: 64rpx;
+        margin-right: 20rpx;
+        font-size: 30rpx
+    }

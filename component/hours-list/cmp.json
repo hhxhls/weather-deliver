@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "c-hours-item": "/component/hours-item/cmp"
+  }
+}

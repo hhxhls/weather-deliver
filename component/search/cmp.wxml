@@ -1,0 +1,11 @@
+<!--components/search/cmp.wxml-->
+<view class="container">
+    <input type="text" 
+           class="search-box" 
+           placeholder="让我知道你想看哪里的天气吧" 
+           placeholder-class="placeholder"
+           bindconfirm="onSearch"
+           bindblur="onBlur"
+           value="{{value}}"></input>
+    <text class="btn" catch:tap="onSearch">搜索</text>
+</view>

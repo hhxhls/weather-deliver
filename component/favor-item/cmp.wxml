@@ -1,0 +1,20 @@
+<!--component/favor-item/cmp.wxml-->
+<view class="container" catch:tap="onFavorTap" style="background-color:{{color}}">
+    <view class="main">
+        <view class="left">
+            <image class="icon" src="/img/cond-icon-heweather/{{favor.weatherCode}}.png"></image>
+        </view>
+        <view class="middle">
+            <view class="location middle-text">{{favor.location}}/{{favor.parentCity}}</view>
+            <view class="weather-des middle-text">{{favor.weatherDesD}}{{favor.weatherDesD!=favor.weatherDesN?'转'+ favor.weatherDesN:''}}</view>
+            <view class="pop middle-text">降水概率:{{favor.pop}}%</view>
+        </view>
+        <view class="right">
+            <view class="tmp-current">{{favor.currentTmp}}°C</view>
+            <view class="tmp-daily">{{favor.dailyTmpMax}}°C/{{favor.dailyTmpMin}}°C</view>
+        </view>
+    </view>
+    <view class="delete">
+        <c-bin target="favorate" bindondelete="onItemDeleted"></c-bin>
+    </view>
+</view>

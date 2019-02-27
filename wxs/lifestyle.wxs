@@ -1,0 +1,35 @@
+function getType(str){
+    var ret = '';
+    switch(str){
+        case 'comf':
+        ret = '舒适度';
+        break;
+        case 'drsg':
+        ret = '穿衣';
+        break;
+        case 'flu':
+        ret = '流感';
+        break;
+        case 'sport':
+        ret = '运动';
+        break;
+        case 'trav':
+        ret = '旅游';
+        break;
+        case 'uv':
+        ret = '紫外线';
+        break;
+        case 'cw':
+        ret = '洗车';
+        break;
+        case 'air':
+        ret = '污染物扩散';
+        break;
+    }
+    return ret;
+}
+
+
+module.exports ={
+    getType:getType
+}

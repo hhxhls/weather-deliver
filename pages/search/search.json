@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "c-search":"/component/search/cmp",
+    "c-tag-list":"/component/tag-list/cmp",
+    "c-bin":"/component/bin/cmp"
+  }
+}

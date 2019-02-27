@@ -1,0 +1,7 @@
+<!--component/lifestyle-list/cmp.wxml-->
+<view class="container">
+    <view class="title">生活指数</view>
+    <view class="lifestyle-container">
+        <c-lifestyle-item wx:for="{{lifestyle}}" wx:key="index" lifestyleItem = "{{item}}"></c-lifestyle-item>
+    </view>
+</view>

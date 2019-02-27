@@ -1,0 +1,24 @@
+<!--component/forecast-list/cmp.wxml-->
+<view class="container">
+    <view class="title">每日预报</view>
+    <swiper class="swiper-container" display-multiple-items="2" >
+    <block wx:for="{{dailyWeather}}" wx:key="index">
+        <swiper-item class="swiper-items" >
+            <c-forecast-item 
+                date="{{item.date}}" 
+                sunrise="{{item.sunrise}}" 
+                sunset="{{item.sunset}}" 
+                tmpMax="{{item.tmpMax}}" 
+                tmpMin="{{item.tmpMin}}" 
+                weatherCode="{{item.weatherCode}}" 
+                weatherDesD="{{item.weatherDesD}}" 
+                weatherDesN="{{item.weatherDesN}}" 
+                windDir="{{item.windDir}}"
+                first="{{index===0?true:false}}"
+            />
+        </swiper-item>
+    </block>
+</swiper>
+</view>
+
+

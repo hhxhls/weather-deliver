@@ -1,0 +1,12 @@
+<!--component/hours-list/cmp.wxml-->
+<view class="container">
+    <view class="title">24小时预报</view>
+    <swiper class="swiper-container`" display-multiple-items="4">
+        <block wx:for="{{hourly}}" wx:key="index">
+            <swiper-item class="swiper-items" >
+                <c-hours-item index="{{item}}"></c-hours-item>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+

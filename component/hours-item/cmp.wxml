@@ -1,0 +1,7 @@
+<!--component/hours-item/cmp.wxml-->
+<view class="container">
+    <image class="icon" src="/img/cond-icon-heweather/{{index.weatherCode}}.png"></image> 
+    <view class="weather-des">{{index.weatherDes}}</view>
+    <view class="tmp">{{index.tmp}}°C</view>
+    <view class="time">{{index.time}}</view>
+</view>

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/favor/favor",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的当前位置"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "天气",
+        "iconPath": "img/tab/weather.png",
+        "selectedIconPath": "img/tab/weather_selected.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "img/tab/search.png",
+        "selectedIconPath": "img/tab/search_selected.png"
+      },
+      {
+        "pagePath": "pages/favor/favor",
+        "text": "收藏",
+        "iconPath": "img/tab/favor.png",
+        "selectedIconPath": "img/tab/favor_selected.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+<!--pages/favor/favor.wxml-->
+<view class="loading-container" hidden="{{!loading}}">
+    <c-loading class="loading"></c-loading>
+</view>
+<view class="container" hidden="{{loading}}">
+    <view class="favor-container" wx:if="{{show}}">
+        <c-favor-item wx:for="{{favorList}}" wx:key="index" 
+                    favor="{{item}}" color="{{color[index]}}" 
+                    index="index"
+                    bindonitemdeleted="onItemDeleted"></c-favor-item>
+    </view>
+    <view class="notthing" wx:if="{{!show}}">———— 您还没有收藏任何城市 ————</view>
+</view>

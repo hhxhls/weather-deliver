@@ -1,0 +1,16 @@
+function getWeatherDetail(weatherCurrent,airQuality){
+
+    return {
+        aqi:airQuality.aqi,
+        qlty:airQuality.qlty,
+        condTxt:weatherCurrent.cond_txt,
+        hum:weatherCurrent.hum,
+        windDir:weatherCurrent.wind_dir,
+        windSc:weatherCurrent.wind_sc,
+        pres:weatherCurrent.pres,
+    }
+}
+
+module.exports = {
+    getWeatherDetail:getWeatherDetail
+}

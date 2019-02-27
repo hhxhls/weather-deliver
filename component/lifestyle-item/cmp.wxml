@@ -1,0 +1,7 @@
+<!--component/lifestyle-item/cmp.wxml-->
+<view class="container">
+    <image src="../../img/lifestyle/{{lifestyleItem.type}}.png" class="icon"></image>
+    <view class="des">{{lifestyleItem.brf}}</view>
+    <view class="type">{{getLifeStyle.getType(lifestyleItem.type)}}</view>
+</view>
+<wxs  src="../../wxs/lifestyle.wxs" module="getLifeStyle"></wxs>
