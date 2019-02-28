@@ -103,10 +103,12 @@ Page({
   },
 
   setPageData(searchWord = null) {
+    const that = this;
     this.setData({
       loading:true
     })
     getCityCode(function (res) {
+      console.log(res)
       this.setData({
         cityId: res.basic[0].cid,
         location: res.basic[0].location,
@@ -158,6 +160,10 @@ Page({
             detailLocation,
             loading:false,
           });
+
+          // 在缓存中存取本次请求结果，搜索失败时会取出作为页面缓存。
+          const lastTimeIndexData = this.data;
+          wx.setStorageSync('lastTimeIndexData',lastTimeIndexData);
       },(res)=>{
         wx.showModal({
           title: '遇到麻烦了',
@@ -165,9 +171,18 @@ Page({
           showCancel: false,
           confirmText:"好的",
           success(res) {
-              wx.switchTab({
-                  url:'/pages/search/search',
-              })
+            const lastTimeIndexData = wx.getStorageSync('lastTimeIndexData');
+            that.setData({
+              airQuality:lastTimeIndexData.airQuality,
+              lifeStyle:lastTimeIndexData.lifeStyle,
+              sunInfo:lastTimeIndexData.sunInfo,
+              weatherCurrent:lastTimeIndexData.weatherCurrent,
+              weatherForecast:lastTimeIndexData.weatherForecast,
+              weatherHourly:lastTimeIndexData.weatherHourly,
+              lunaInfo:lastTimeIndexData.lunaInfo,
+              detailLocation:lastTimeIndexData.detailLocation,
+              loading:false,
+            })
           }
         })
         throw new Error(res);
