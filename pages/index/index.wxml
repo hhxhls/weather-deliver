@@ -18,5 +18,6 @@
     <c-hours-list hourly="{{weatherHourly}}"></c-hours-list>
     <c-lifestyle-list lifestyle="{{lifeStyle}}"></c-lifestyle-list>
 </view>
+<view class="acknowledge">—— 数据来源:和风天气 ——</view>
 <wxs src="../../wxs/weather-detail.wxs" module="weatherDetail"></wxs>
 <wxs src="../../wxs/AQI.wxs" module="aqi"></wxs>

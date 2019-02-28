@@ -16,3 +16,9 @@
     margin-top: -30rpx;
     margin-left: -30rpx;
 }
+.acknowledge{
+    text-align: center;
+    background-color: #ddd;
+    font-size: 28rpx;
+    line-height: 1.8;
+}
