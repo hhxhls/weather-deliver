@@ -56,10 +56,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
+    let app = getApp();
+    if(this.data.location === app.searchWord){
+      return;
+    }
     wx.pageScrollTo({
       scrollTop: 0
     });
-    let app = getApp();
+
     let searchWord = app.searchWord;
     if(!searchWord){
       searchWord = null;
@@ -108,7 +113,6 @@ Page({
       loading:true
     })
     getCityCode(function (res) {
-      console.log(res)
       this.setData({
         cityId: res.basic[0].cid,
         location: res.basic[0].location,
@@ -131,7 +135,7 @@ Page({
         request.getLunaInfo(),
         getDetailLocation(searchWord),
       ]).then((res)=>{
-        const [ 
+        let [ 
           airQuality,
           lifeStyle,
           sunInfo,
@@ -141,6 +145,12 @@ Page({
           lunaInfo,
           detailLocation,
         ] = res;
+
+        // 解决安卓对协议的不兼容问题
+        if(lunaInfo === undefined){
+          lunaInfo = {error:true};
+          console.log(lunaInfo);
+        }
         // 如果是搜索关键词的情况下，采用location作为地址
         if(detailLocation.district === 'search'){
             detailLocation.district = this.data.parentCity;
@@ -160,6 +170,8 @@ Page({
             detailLocation,
             loading:false,
           });
+          let app = getApp();
+          app.searchWord =this.data.location;
 
           // 在缓存中存取本次请求结果，搜索失败时会取出作为页面缓存。
           const lastTimeIndexData = this.data;

@@ -1,6 +1,6 @@
 <!--component/weather-sum/cmp.wxml-->
 <view class="container">
-    <image class="weather-icon" src="/img/cond-icon-heweather/{{weatherCode}}.png" mode="widthFix"></image>
+    <image class="weather-icon" src="/img/cond-icon-heweather/{{weatherCode}}.png" mode="widthFix" wx:if="{{weatherCode}}"></image>
     <text class="tmp">{{tmp}}°</text>
     <text class="tmp-mark">C</text>
 </view>

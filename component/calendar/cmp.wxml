@@ -1,5 +1,5 @@
 <!--component/calendar/cmp.wxml-->
-<view class="container">
+<view class="container" hidden="{{luna.error === true}}">
     <view class="head"></view>
     <view class="content">
         <view class="left">

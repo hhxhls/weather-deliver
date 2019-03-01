@@ -26,10 +26,11 @@ class Request {
             }
           }else{
             // 农历相关的返回数据
+            resolved(res.data.data);
             if (res.data.status === 200) {
               resolved(res.data.data);
-            } else {
-              rejected(res.data.HeWeather6[0].status);
+            } else if(res.statusCode === 505){
+              resolved({error:true});              
             }
           }
         },
